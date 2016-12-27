@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "author": "Andy",
   "dependencies": {
-    "serialport": "*",
     "ws": "*"
   },
   "engines": {
@@ -13,5 +12,5 @@
   "scripts": {
     "start": "node server.js"
   },
-  "devDependencies": {},
+  "devDependencies": {}
 }
