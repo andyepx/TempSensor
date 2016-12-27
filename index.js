@@ -20,7 +20,7 @@ var connections = [];            // list of connections to the server
 // configure the serial port:
 SerialPort = serialport.SerialPort,             // make a local instance of serialport
     portName = process.argv[2],                 // get serial port name from the command line
-    delimiter = '\n'; //process.argv[3];                // serial parser to use, from command line
+    delimiter = process.argv[3];                // serial parser to use, from command line
 var serialOptions = {                           // serial communication options
     baudRate: 9600,                           // data rate: 9600 bits per second
     parser: delimiter // newline generates a data event
