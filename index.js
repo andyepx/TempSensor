@@ -20,7 +20,7 @@ var connections = [];            // list of connections to the server
 // configure the serial port:
 SerialPort = serialport.SerialPort,             // make a local instance of serialport
     portName = process.argv[2],                 // get serial port name from the command line
-    delimiter = process.argv[3];                // serial parser to use, from command line
+    delimiter = '\n'; //process.argv[3];                // serial parser to use, from command line
 var serialOptions = {                           // serial communication options
     baudRate: 9600,                           // data rate: 9600 bits per second
     parser: delimiter // newline generates a data event
@@ -62,7 +62,7 @@ function showPortOpen() {
 function sendSerialData(data) {
     // if there are webSocket connections, send the serial data
     // to all of them:
-    console.log(Number(data));
+    console.log(data);
     if (connections.length > 0) {
         broadcast(data);
     }
