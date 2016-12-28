@@ -10,7 +10,6 @@ import time
 import datetime
 
 import Adafruit_DHT
-import gspread
 
 from oauth2client.service_account import ServiceAccountCredentials
 from httplib2 import Http
@@ -45,6 +44,19 @@ while True:
 
     print('Temperature: {0:0.1f} C'.format(temp))
     print('Humidity:    {0:0.1f} %'.format(humidity))
+
+    t = '{0:0.1f}'.format(temp)
+    h = '{0:0.1f}'.format(humidity)
+
+    resp, content = http_auth.request(
+        uri='https://www.googleapis.com/fusiontables/v2/query',
+        method='POST',
+        headers={'Content-Type': 'application/x-www-form-urlencoded'},
+        body='INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz (Temperature, Humidity) VALUES (' + t + ', ' + h + ')',
+    )
+
+    print resp
+    print content
 
     # Wait 30 seconds before continuing
     time.sleep(FREQUENCY_SECONDS)
