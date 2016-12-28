@@ -47,9 +47,7 @@ while True:
 
     t = '{0:0.1f}'.format(temp)
     h = '{0:0.1f}'.format(humidity)
-    dt = datetime.datetime
-    d = str(dt.year) + '-' + str(dt.month) + '-' + str(dt.date) + ' ' + \
-        str(dt.hour) + ':' + str(dt.minute) + ':' + str(dt.second)
+    d = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     query = 'INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz ' \
             '(Date, Temperature, Humidity) VALUES (\"' + d + '\",' + t + ', ' + h + ')'
