@@ -52,7 +52,8 @@ while True:
         uri='https://www.googleapis.com/fusiontables/v2/query',
         method='POST',
         headers={'Content-Type': 'application/x-www-form-urlencoded'},
-        body='INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz (Temperature, Humidity) VALUES (' + t + ', ' + h + ')',
+        body='sql=INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz '
+             '(Temperature, Humidity) VALUES (' + t + ', ' + h + ')',
     )
 
     print resp
