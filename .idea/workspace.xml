@@ -56,15 +56,15 @@
       <file leaf-file-name="fusiontables.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fusiontables.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="630">
+              <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <element signature="e#172#183#0" expanded="true" />
-                <marker date="1482891106000" expanded="true" signature="1608:1710" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-                <marker date="1482891106000" expanded="true" signature="1608:1720" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-                <marker date="1482891106000" expanded="true" signature="1608:1721" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-                <marker date="1482891106000" expanded="true" signature="1608:1731" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-                <marker date="1482891106000" expanded="true" signature="1608:1848" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482891534000" expanded="true" signature="1776:1884" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482891534000" expanded="true" signature="1776:1904" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482891534000" expanded="true" signature="1776:1905" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482891534000" expanded="true" signature="1776:1915" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482891534000" expanded="true" signature="1776:2032" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
               </folding>
             </state>
           </provider>
@@ -869,12 +869,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482841652293</updated>
-      <workItem from="1482841653976" duration="5174000" />
+      <workItem from="1482841653976" duration="5570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5174000" />
+    <option name="totallyTimeSpent" value="5570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
@@ -973,15 +973,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fusiontables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="630">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <element signature="e#172#183#0" expanded="true" />
-            <marker date="1482891106000" expanded="true" signature="1608:1710" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-            <marker date="1482891106000" expanded="true" signature="1608:1720" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-            <marker date="1482891106000" expanded="true" signature="1608:1721" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-            <marker date="1482891106000" expanded="true" signature="1608:1731" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-            <marker date="1482891106000" expanded="true" signature="1608:1848" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+            <marker date="1482891534000" expanded="true" signature="1776:1884" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+            <marker date="1482891534000" expanded="true" signature="1776:1904" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+            <marker date="1482891534000" expanded="true" signature="1776:1905" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+            <marker date="1482891534000" expanded="true" signature="1776:1915" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+            <marker date="1482891534000" expanded="true" signature="1776:2032" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
           </folding>
         </state>
       </provider>

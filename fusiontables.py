@@ -47,13 +47,16 @@ while True:
 
     t = '{0:0.1f}'.format(temp)
     h = '{0:0.1f}'.format(humidity)
+    dt = datetime.datetime
+    d = str(dt.year) + '-' + str(dt.month) + '-' + str(dt.date) + ' ' + \
+        str(dt.hour) + ':' + str(dt.minute) + ':' + str(dt.second)
 
     resp, content = http_auth.request(
         uri='https://www.googleapis.com/fusiontables/v2/query',
         method='POST',
         headers={'Content-Type': 'application/x-www-form-urlencoded'},
         body='sql=INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz '
-             '(Temperature, Humidity) VALUES (' + t + ', ' + h + ')',
+             '(Date, Temperature, Humidity) VALUES (' + d + ',' + t + ', ' + h + ')',
     )
 
     print resp
