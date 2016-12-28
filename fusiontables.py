@@ -50,7 +50,7 @@ while True:
     d = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     query = 'INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz ' \
-            '(Date, Temperature, Humidity) VALUES (\"' + d + '\",' + t + ', ' + h + ')'
+            '(Date, Temperature, Humidity) VALUES (\'' + d + '\',' + t + ', ' + h + ')'
 
     print query
 
@@ -58,7 +58,7 @@ while True:
         uri='https://www.googleapis.com/fusiontables/v2/query',
         method='POST',
         headers={'Content-Type': 'application/x-www-form-urlencoded'},
-        body='sql='+query,
+        body='sql=' + query,
     )
 
     print content
