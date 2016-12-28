@@ -28,7 +28,7 @@ DHT_TYPE = Adafruit_DHT.DHT22
 DHT_PIN = 22
 
 # How long to wait (in seconds) between measurements.
-FREQUENCY_SECONDS = 60
+FREQUENCY_SECONDS = 60 * 5
 
 while True:
 

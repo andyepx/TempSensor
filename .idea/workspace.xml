@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64538f1b-4dac-4978-8e7c-b85cda399890" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fusiontables.py" afterPath="$PROJECT_DIR$/fusiontables.py" />
     </list>
@@ -55,16 +54,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fusiontables.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fusiontables.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fusiontables.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="52" column="64" lean-forward="false" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+            <state relative-caret-position="192">
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#172#183#0" expanded="true" />
-                <marker date="1482891924000" expanded="true" signature="1468:1612" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-                <marker date="1482891924000" expanded="true" signature="1847:1957" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482892006000" expanded="true" signature="1472:1616" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+                <marker date="1482892006000" expanded="true" signature="1851:1961" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,8 +110,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/fusiontables.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -868,12 +877,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482841652293</updated>
-      <workItem from="1482841653976" duration="5860000" />
+      <workItem from="1482841653976" duration="5949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5860000" />
+    <option name="totallyTimeSpent" value="5949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
@@ -962,23 +971,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/fusiontables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="192">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="e#172#183#0" expanded="true" />
+            <marker date="1482892006000" expanded="true" signature="1472:1616" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+            <marker date="1482892006000" expanded="true" signature="1851:1961" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fusiontables.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="52" column="64" lean-forward="false" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
-          <folding>
-            <element signature="e#172#183#0" expanded="true" />
-            <marker date="1482891924000" expanded="true" signature="1468:1612" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-            <marker date="1482891924000" expanded="true" signature="1847:1957" ph="INSERT INTO 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz... " />
-          </folding>
+        <state relative-caret-position="21">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
