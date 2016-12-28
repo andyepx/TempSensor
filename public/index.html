@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/addons/p5.dom.js"></script>
+    <script type="text/javascript">
+        var myText;		// variable for the text div you'll create
+        var socket = new WebSocket("ws://192.168.1.69:8081");
+        var connected = false;
+        var inData;
+        var lastSecond;
+        function setup() {
+            // The socket connection needs two event listeners:
+            socket.onopen = openSocket;
+            socket.onmessage = showData;
+        }
+        function openSocket() {
+            myText.html("Socket open");
+            connected = true;
+        }
+        function showData(result) {
+            inData = result.data;        // convert result to an integer
+            println(inData);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

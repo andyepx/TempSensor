@@ -28,7 +28,7 @@ var serialOptions = {                           // serial communication options
 
 
 // if the delimiter is n, use readline as the parser:
-if (delimiter === 'n' ) {
+if (delimiter === 'n') {
     serialOptions.parser = serialport.parsers.readline('\n');
 }
 
@@ -90,7 +90,7 @@ function handleConnection(client) {
 
     client.on('message', sendToSerial);      // when a client sends a message,
 
-    client.on('close', function() {           // when a client closes its connection
+    client.on('close', function () {           // when a client closes its connection
         console.log("connection closed");       // print it out
         var position = connections.indexOf(client); // get the client's position in the array
         connections.splice(position, 1);        // and delete it from the array
