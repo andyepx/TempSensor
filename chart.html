@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Living room temperature and humidity</title>
+</head>
+<body>
+
+<style>
+    body {
+        font-family: "Open Sans", Verdana, Tahoma;
+        text-align: center;
+        color: crimson;
+    }
+
+    .wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .left, .right {
+        width: 50%;
+        padding: 1%;
+    }
+
+    .left {
+        order: 1;
+    }
+
+    .right {
+        order: 2;
+    }
+</style>
+
+
+<div class="wrap">
+    <div class="left">
+        <h2>Temperature</h2>
+        <h3 id="currentT"></h3>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="right">
+        <h2>Humidity</h2>
+        <h3 id="currentH"></h3>
+        <canvas id="canvas2"></canvas>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    var ft = 'https://www.googleapis.com/fusiontables/v2/query';
+    var q = 'SELECT Date,Temperature,Humidity FROM 15LQJP48AhfQ2jlLkQrykrBUmnJqSCjdCr8hvLguz';
+
+    axios.post(ft, "sql=" + q + "&key=AIzaSyB6idLUDlT87Vh_qcxK_RX_VIa9ywaQWWQ")
+        .then(function (response) {
+
+            var data_t = [];
+            for (var x in response.data.rows) {
+                var r = response.data.rows[x];
+                data_t.push({
+                    x: new Date(r[0]),
+                    y: Number(r[1])
+                });
+            }
+
+            var data_h = [];
+            for (var y in response.data.rows) {
+                var rr = response.data.rows[y];
+                data_h.push({
+                    x: new Date(rr[0]),
+                    y: Number(rr[2])
+                });
+            }
+
+            document.getElementById("currentT").innerHTML = data_t[data_t.length - 1].y + " &deg;C";
+            document.getElementById("currentH").innerHTML = data_h[data_h.length - 1].y + " %";
+
+            var ctx = document.getElementById('canvas').getContext('2d');
+            var myLineChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Temperature',
+                        data: data_t,
+                        backgroundColor: 'rgba(189, 255, 191, 0.5)',
+                        pointRadius: 0,
+                        lineTension: 1.5
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            unit: 'day',
+                            unitStepSize: 1,
+                            position: 'bottom'
+                        }]
+                    },
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+
+            var ctx2 = document.getElementById('canvas2').getContext('2d');
+            var myLineChart2 = new Chart(ctx2, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Humidity',
+                        data: data_h,
+                        backgroundColor: 'rgba(155, 179, 186, 0.5)',
+                        pointRadius: 0,
+                        lineTension: 1.5
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            unit: 'day',
+                            unitStepSize: 1,
+                            position: 'bottom'
+                        }]
+                    },
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
+
+
+</script>
+
+</body>
+</html>
