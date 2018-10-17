@@ -1,2 +1,4 @@
 key.json
-.idea/workspace.xml
+.DS_Store
+venv
+.idea
